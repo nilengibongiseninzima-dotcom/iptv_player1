@@ -1,16 +1,19 @@
-name: omnikingnile_tv
-description: IPTV Player
-version: 1.0.0+1
+name: iptv_player
+description: A simple IPTV player app
+publish_to: 'none'
+
 environment:
   sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
     sdk: flutter
-  better_player: ^4.1.0
-  http: ^1.1.0
+  better_player: ^0.0.84
+  flutter/services:
+    path:.
 
 flutter:
   uses-material-design: true
+  
   assets:
     - assets/channels.json
